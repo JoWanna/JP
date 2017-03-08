@@ -1,0 +1,366 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ----------------- fin du reset ----------------- */
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	background-color: #FEFEFE;
+	line-height: 1;
+	font-family: "Aaargh";
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#haut {
+	width: 92%;
+	margin: 0 auto;
+	height: 100px;
+	border-bottom: 0.12em solid black;
+}
+
+#hautGauche {
+	width: 35%;
+	height: 100px;
+	float: left;
+	font-family: "droid";
+}
+
+#hautGauche h1 {
+		margin-top:0.95em;
+		font-size: 310%;
+}
+
+#hautDroite {
+	width: 65%;
+	height: 100px;
+	float:left;
+	font-family: "Aaargh";
+	font-weight: bold;
+	font-size: 1em;
+}
+
+ul {
+	margin-top: 4.5em;
+	float: right;
+}
+
+li {
+    display: inline;
+    margin-left: 1.2em;
+}
+
+li a:hover {
+	font-family: "Gladifilthefte";
+	font-size: 1.4em;
+	color: #00E46B;
+}
+
+.page-active {
+	font-family: "Gladifilthefte";
+	font-size: 1.4em;
+	color: #00E46B;
+}
+
+
+/* ----------------- fin de la partie "haute" ----------------- */
+
+
+#contenu {
+	width: 92%;
+	margin: 3em auto 0em auto;
+}
+
+.vitrine {
+	height: 225px;
+	margin-right: 0.7em;
+	margin-bottom: 0.78em;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.vitrine:hover {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+footer {
+	width: 100%;
+	float: left;
+	height: 30px;
+	padding-left: 4%;
+	padding-right: 4%;
+	bottom: 0;
+	position: relative;
+	font-size: 0.6em;
+	color: #00E46B;
+	font-family: avenir;
+	margin-top: 3em;
+}
+
+footer a {
+	color: #00E46B;
+}
+
+.copyright{
+	float: right;
+}
+
+.cadre-noir {
+	border: 0.5px solid black;
+	-webkit-transition: .3s ease-in-out;
+}
+
+.cadre-noir:hover {
+	border: 0.5px solid #00E46B;
+}
+
+#texte {
+	width: 27%;
+	float: left;
+	margin-right: 13%;
+	font-size: 1.22em;
+	line-height: 1.45em;
+	margin-top: -0.4em;
+}
+
+#texte a {
+	color: #00E46B;
+	text-decoration: underline;
+}
+
+#texte a:hover {
+	text-decoration: overline;
+}
+
+#f {
+	width: 60%;
+	float: left;
+}
+
+#f img {
+	width: 100%;
+    height: auto;
+    max-width: 100%;	
+}
+
+#f1 {
+	width: 24%;
+	margin-right: 2%;
+	float: left;
+	line-height: 1.45em;
+	font-size: 0.92em;
+}
+
+#f1 img {
+	width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+
+#f2 {
+	width: 34%;
+	float: left;
+}
+
+#f2 img {
+	width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+
+h2 {
+	font-family: "Gladifilthefte";
+	font-size: 1em;
+	margin-top: -0.1em;
+}
+
+.invisible {
+	opacity: 0;
+}
+
+.date {
+	color: #00E46B;
+	font-size: 1.33em;
+	margin-bottom: 0.5em;
+}
+
+
+/* ----------------- fin de la partie "main"----------------- */
+
+
+.article {
+	width: 22%;
+	border: 0.12em solid #00E46B;
+	margin-right: 4%;
+	padding: 1em 1.5em;
+	line-height: 1.35em;
+	float: left;
+}
+
+.article h2, .article-page h2{
+	margin-bottom: 0.5em;
+	font-size: 1.8em;
+}
+
+.article img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+.article a {
+	color:#00E46B;
+	text-decoration: underline;
+}
+
+.article a:hover {color:black;}
+
+.dernier {
+	margin-right: 0;
+}
+
+#pages {
+	float: left;
+	width: 100%;
+	margin: 2em 0 0 0;
+	text-align: center;
+	font-family: "Futura";
+	font-size: 1.65em;
+}
+
+#pages a {color:#00E46B;}
+
+.article-page {
+	border: 0.12em solid #00E46B;
+	margin-right: 4%;
+	padding: 1em 2em;
+	width: 100%;
+}
+
+.article-page p {font-size: 1.15em; line-height: 1.65em;}
+
+#article-images {
+	width: 100%;
+}
+
+#article-images img {height: 15em;margin-right: 0.5em;margin-bottom: 0.5em;}
+
+
+/* ----------------- fin de la partie blog ----------------- */
+
+@media screen and (max-width: 1100px) {
+
+	#hautGauche h1 {font-size: 235%;margin-top: 1.55em;}
+
+	#texte {font-size: 1em;}
+
+	.article {font-size: 0.85em;}	
+
+	.article-page p {font-size: 0.95em;}
+
+	.article-page h2 {font-size: 1.45em;}
+
+	#article-images img {max-height: 27%;height: auto;}
+
+}
+
+
+
+@media screen and (max-width: 800px){
+
+	body {padding:1em;}
+
+	#haut {border:0;}
+
+	#hautGauche {float: left;width: 100%;height: auto; border-bottom:5px solid black;}
+
+	#hautGauche h1 {font-size: 620%;text-align: center; margin: 0.15em 0 0.05em 0;}
+
+	#hautDroite {width: 100%; height:auto; float:left; margin:0.7em 0 1.5em 0; left; font-size: 1.45em; padding-bottom:0.4em; border-bottom:5px solid black;}
+
+	ul {margin: 0 auto;float: none;text-align: center;}
+
+	li {margin: 0 0.6em;}
+
+	.vitrine {max-height: 23%; width: auto;}
+
+	#texte {width: 100%;font-size: 110%;}
+
+	#texte h2 {font-size: 117%;}
+
+	#f2 {width: 100%;float: left;}
+
+	#f1 {width: 100%; margin-top: 2em;}
+
+	#f {width: 100%; margin-top: 2em;}
+
+	.article {width: 100%; margin-bottom: 1.7em; font-size: 105%; line-height: 150%;}
+
+	#pages {margin: 0 0 0.8em 0; font-size: 250%;}
+
+	.article-page {width: 100%; float: left; font-size: 120%; margin-bottom: 1.7em;}
+		
+}
+
+
+
+
+
+
