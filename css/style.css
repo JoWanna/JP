@@ -391,7 +391,7 @@ h2 {
 
 	.article-page {width: 100%; float: left; font-size: 120%; margin-bottom: 1.7em;}
 
-	#footer {padding-left:0; padding-right: 0;}
+	#footer {padding-left:0; padding-right: 0;background-color: red;}
 		
 }
 
