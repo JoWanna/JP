@@ -373,7 +373,7 @@ h2 {
 
 	#contenu #texte {width: 100%;}
 
-	.vitrine {max-height: 20%; width: auto;}
+	.vitrine {width: 100%;}
 
 	#texte {width: 100%;font-size: 110%;}
 
