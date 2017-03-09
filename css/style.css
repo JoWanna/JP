@@ -271,6 +271,8 @@ h2 {
 	margin-bottom: 0.5em;
 }
 
+#texte.about {width: 65%;}
+
 
 /* ----------------- fin de la partie "main"----------------- */
 
@@ -359,11 +361,11 @@ h2 {
 
 	#haut {border:0;width: 100%;}
 
-	#hautGauche {float: left; width: 100%;height: auto; border-bottom: 2.5px solid black;}
+	#hautGauche {float: left; width: 100%;height: auto; border-bottom: 3px solid black;}
 
-	#hautGauche h1 {font-size: 410%; text-align: center;margin: 0;}
+	#hautGauche h1 {font-size: 410%; text-align: center;margin: 0 0 0.04em; 0;}
 
-	#hautDroite {width: 100%; height:auto; float:left; margin:0.8em 0 0 0; font-size: 1.07em; padding-bottom:0.45em; border-bottom: 2.5px solid black; padding-left: 0; padding-right: 0;}
+	#hautDroite {width: 100%; height:auto; float:left; margin:0.8em 0 0 0; font-size: 1.07em; padding-bottom:0.45em; padding-left: 0; padding-right: 0;}
 
 	ul {margin: 0 auto;float: none;text-align: center;}
 
@@ -373,15 +375,15 @@ h2 {
 
 	.vitrine {width: 100%; height: auto;}
 
-	#texte {width: 100%;font-size: 110%; padding-bottom: 0.45em;}
+	#texte {width: 100%;font-size: 110%; }
 
-	#texte h2 {font-size: 117%;}
+	#texte h2 {font-size: 130%; line-height: 1.35em;}
 
 	#f2 {width: 100%;float: left;}
 
-	#f1 {width: 100%; margin-top: 2em;}
+	#f1 {width: 100%; margin-top: 1.5em;}
 
-	#f {width: 100%; margin-top: 2em;}
+	#f {width: 100%; margin-top: 1.5em;}
 
 	.article {width: 100%; margin-bottom: 1.4em; font-size: 105%; line-height: 150%;}
 
@@ -392,6 +394,8 @@ h2 {
 	.article-page {width: 100%; float: left; font-size: 120%; margin-bottom: 1.7em;}
 
 	footer {padding:0; margin-top: 0.3em;}
+
+	#texte.about {width: 75%;}
 		
 }
 
