@@ -361,15 +361,17 @@ h2 {
 
 	#hautGauche {float: left;width: 100%;height: auto; border-bottom:5px solid black;}
 
-	#hautGauche h1 {font-size: 400%;text-align: center; margin: 0.15em 0 0.05em 0;}
+	#hautGauche h1 {font-size: 200%;text-align: center; margin: 0.15em 0 0.05em 0;}
 
-	#hautDroite {width: 100%; height:auto; float:left; margin:0.7em 0 1.5em 0; left; font-size: 1em; padding-bottom:0.4em; border-bottom:4px solid black;}
+	#hautDroite {width: 100%; height:auto; float:left; margin:0.7em 0 1.5em 0; left; font-size: 1em; padding-bottom:0.4em; border-bottom:5px solid black;}
 
 	ul {margin: 0 auto;float: none;text-align: center;}
 
 	li {margin: 0 0.6em;}
 
-	.vitrine {max-height: 23%; width: auto;}
+	#contenu {width: 100%;}
+
+	.vitrine {max-height: 20%; width: auto;}
 
 	#texte {width: 100%;font-size: 110%;}
 
