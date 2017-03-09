@@ -63,9 +63,9 @@ body {
 	font-family: "Aaargh";
 	src: url('../fonts/Aaargh.ttf');  
 	font-family: "droid";
-	src: url('fonts/droid.otf');  
+	src: url('../fonts/droid.otf');  
 	font-family: "Gladifilthefte";
-	src: url('fonts/Gladifilthefte.ttf');  
+	src: url('../fonts/Gladifilthefte.ttf');  
 }
 
 a {
