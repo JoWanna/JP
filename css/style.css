@@ -62,10 +62,31 @@ body {
 @font-face {
 	font-family: "Aaargh";
 	src: url('../fonts/Aaargh.ttf');  
+	src: 	
+		local('Aaargh'),
+		local('Aaargh'),
+		url('../fonts/Aaargh.ttf')
+		format('truetype');
+}
+
+@font-face {
 	font-family: "droid";
 	src: url('../fonts/droid.otf');  
+	src: 	
+		local('droid'),
+		local('droid'),
+		url('../fonts/droid.otf')
+		format('opentype');
+}
+
+@font-face {
 	font-family: "Gladifilthefte";
 	src: url('../fonts/Gladifilthefte.ttf');  
+	src: 	
+		local('Gladifilthefte'),
+		local('Gladifilthefte'),
+		url('../fonts/Gladifilthefte.ttf')
+		format('truetype');
 }
 
 a {
