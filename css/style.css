@@ -301,6 +301,8 @@ h2 {
 .article a {
 	color:#00E46B;
 	text-decoration: underline;
+	font-family: "Gladifilthefte";
+	font-size:1.5em;
 }
 
 .article a:hover {color:black;}
@@ -392,11 +394,13 @@ h2 {
 
 	.dernier {margin-bottom: 0.9em;}
 
-	.article-page {width: 100%; float: left; font-size: 120%; margin-bottom: 1.7em;}
+	.article-page {width: 100%; float: left; font-size: 110%; margin-bottom: 1.7em; padding: 1em;}
+
+	#article-images {width: 100%;}
 
 	footer {padding:0; margin-top: 0.3em;}
 
-	#texte.about {width: 70%;}
+	#texte.about {width: 75%;}
 		
 }
 
