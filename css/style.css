@@ -361,7 +361,7 @@ h2 {
 
 	#hautGauche {float: left; width: 100%;height: auto; border-bottom:3px solid black;}
 
-	#hautGauche h1 {font-size: 300%; height:auto; text-align: center; margin: 0.15em 0 0.1em 0;}
+	#hautGauche h1 {font-size: 100vw; text-align: center; margin: 0.15em 0 0.1em 0;}
 
 	#hautDroite {width: 100%; height:auto; float:left; margin:0.7em 0 1.5em 0; left; font-size: 1.07em; padding-bottom:0.4em; border-bottom:3px solid black; padding-left: 0; padding-right: 0;}
 
