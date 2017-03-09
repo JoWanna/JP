@@ -59,6 +59,15 @@ body {
 	font-family: "Aaargh";
 }
 
+@font-face {
+	font-family: "Aaargh";
+	src: url('../fonts/Aaargh.ttf');  
+	font-family: "droid";
+	src: url('fonts/droid.otf');  
+	font-family: "Gladifilthefte";
+	src: url('fonts/Gladifilthefte.ttf');  
+}
+
 a {
 	text-decoration: none;
 	color: black;
