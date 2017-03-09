@@ -359,17 +359,19 @@ h2 {
 
 	#haut {border:0;}
 
-	#hautGauche {float: left;width: 100%;height: auto; border-bottom:5px solid black;}
+	#hautGauche {float: left;width: 100%;height: auto; border-bottom:3px solid black;}
 
-	#hautGauche h1 {font-size: 200%;text-align: center; margin: 0.15em 0 0.05em 0;}
+	#hautGauche h1 {font-size: 600%;text-align: center; margin: 0.15em 0 0.05em 0;}
 
-	#hautDroite {width: 100%; height:auto; float:left; margin:0.7em 0 1.5em 0; left; font-size: 1em; padding-bottom:0.4em; border-bottom:5px solid black;}
+	#hautDroite {width: 100%; height:auto; float:left; margin:0.7em 0 1.5em 0; left; font-size: 1em; padding-bottom:0.4em; border-bottom:3px solid black;}
 
 	ul {margin: 0 auto;float: none;text-align: center;}
 
 	li {margin: 0 0.6em;}
 
-	#contenu {width: 100%;}
+	#contenu, body {width: 100%;}
+
+	#contenu #texte {width: 100%;}
 
 	.vitrine {max-height: 20%; width: auto;}
 
@@ -385,9 +387,11 @@ h2 {
 
 	.article {width: 100%; margin-bottom: 1.7em; font-size: 105%; line-height: 150%;}
 
-	#pages {margin: 0 0 0.8em 0; font-size: 250%;}
+	#pages {margin: 0 0 0.8em 0; font-size: 220%;}
 
 	.article-page {width: 100%; float: left; font-size: 120%; margin-bottom: 1.7em;}
+
+	#footer {padding:0;}
 		
 }
 
