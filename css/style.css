@@ -398,6 +398,8 @@ h2 {
 
 	#article-images {width: 100%;}
 
+	#article-images img {max-width: 100%; height: auto; }
+
 	footer {padding:0; margin-top: 0.3em;}
 
 	#texte.about {width: 75%;}
