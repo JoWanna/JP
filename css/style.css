@@ -376,15 +376,15 @@ footer a:hover {color: #ff4848;}
 
 	#haut {border:0;width: 100%;}
 
-	#hautGauche {float: left; width: 100%;height: auto; border-bottom: 3px solid #2d30bc;}
+	#hautGauche {float: left; width: 100%;height: auto; border-bottom: 3px solid #2d30bc; margin:1em 0 0 0;}
 
-	#hautGauche h1 {font-size: 410%; text-align: center;margin: 0 0 0.04em; 0;}
+	#hautGauche h1 {font-size: 495%; text-align: center;margin: 0 0 0.04em 0; line-height: 1em;}
 
-	#hautDroite {width: 100%; height:auto; float:left; margin:0.8em 0 0 0; font-size: 1.07em; padding-bottom:0.45em; padding-left: 0; padding-right: 0;}
+	#hautDroite {width: 100%; float:left; font-size: 1.2em; height: 75px; margin: 0.55em 0 0 0;}
 
-	ul {margin: 0 auto;float: none;text-align: center;}
+	#haut ul {float: none; margin:0 auto; text-align: center;}
 
-	li {margin: 0 0.6em;}
+	#haut li {margin:0 1em 0 1em;}
 
 	#contenu, body {width: 100%;}
 
@@ -392,19 +392,19 @@ footer a:hover {color: #ff4848;}
 
 	#contenu_txt {width: 100%;font-size: 110%; }
 
-	#contenu_txt h2 {font-size: 130%; line-height: 1.35em;}
+	#contenu_txt h2 {line-height: 1.35em;}
 
-	#f2 {width: 100%;float: left;}
+	#contenu_D {width: 100%;float: left;}
 
 	#contenu_G {width: 100%; margin-top: 1.5em;}
 
-	#f {width: 100%; margin-top: 1.5em;}
+	#contenu_img_txt {width: 100%; margin-top: 1.5em;}
 
-	.article {width: 100%; margin-bottom: 1.4em; font-size: 105%; line-height: 150%;}
+	.preview {width: 100%; margin-bottom: 1.4em; font-size: 105%; line-height: 150%;}
 
-	#pages {margin: 0 0 0.8em 0; font-size: 200%;}
+	#folio {margin: 0 0 0.8em 0; font-size: 200%;}
 
-	.dernier {margin-bottom: 0.9em;}
+	.dernier_article {margin-bottom: 0.9em;}
 
 	.article {width: 100%; float: left; font-size: 110%; margin-bottom: 1.7em; padding: 1em;}
 
@@ -412,7 +412,7 @@ footer a:hover {color: #ff4848;}
 
 	#img_article img {max-width: 100%; height: auto; }
 
-	footer {padding:0; margin-top: 0.3em;}
+	footer {padding:0; margin-top: 0em;}
 
 	#contenu_txt.about {width: 75%;}
 		
