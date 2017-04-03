@@ -177,16 +177,16 @@ h2 {
 	height: 240px;
 	margin-right: 1.3em;
 	margin-bottom: 1.3em;
-	-webkit-filter: grayscale(100%);
+	/*-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+	transition: .3s ease-in-out; */
 }
 
-.img_vitrine:hover {
+/*.img_vitrine:hover {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
-}
+} */
 
 .img_cadre {
 	border: 0.5px solid #2d30bc;
