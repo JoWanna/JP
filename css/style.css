@@ -354,9 +354,11 @@ footer a:hover {color: #ff4848;}
 
 @media screen and (max-width: 1100px) {
 
-	#hautGauche h1 {font-size: 240%;margin-top: 1.45em;}
+	#haut {margin-top: -0.7em;}
 
-	#haut li {font-size: 95%;}
+	#hautGauche h1 {font-size: 250%;margin-top: 1.45em;}
+
+	#haut li {font-size: 90%;}
 
 	#haut ul {margin-top: 3.5em;}
 
@@ -366,7 +368,7 @@ footer a:hover {color: #ff4848;}
 
 	.preview {width: 23.75%; margin-right: 1.25%;}
 
-	.img_vitrine {height: 210px;}
+	.img_vitrine {height: 210px; margin-right: 1.1em; margin-bottom: 1.1em;}
 
 	#folio {margin-top: 1.5em;}
 
@@ -380,7 +382,7 @@ footer a:hover {color: #ff4848;}
 
 @media screen and (max-width: 800px) {
 
-	body {padding-top: 0;}
+	#haut {margin-top: -1em;}
 
 	#hautGauche {width: 50%;}
 
@@ -408,11 +410,15 @@ footer a:hover {color: #ff4848;}
 
 }
 
+
+
 @media screen and (max-width: 610px) {
 
 	#hautGauche h1 {font-size: 190%;margin-top: 2.22em;}
 
 	.img_vitrine {margin-bottom: 0.65em; margin-right: 0.65em; height: 177px;}
+
+	#haut {margin-top: -2em;}
 
 }
 
@@ -422,17 +428,17 @@ footer a:hover {color: #ff4848;}
 
 	body {padding:1.2em;}
 
-	#haut {border:0;width: 100%;}
+	#haut {border:0;width: 100%; margin-top:0;}
 
 	#hautGauche {float: left; width: 100%;height: auto; border-bottom: 3px solid #2d30bc; margin:1em 0 0 0;}
 
 	#hautGauche h1 {font-size: 495%; text-align: center;margin: 0 0 0.04em 0; line-height: 1em;}
 
-	#hautDroite {width: 100%; float:left; font-size: 1.2em; height: 75px; margin: 0.55em 0 0 0;}
+	#hautDroite {width: 100%; float:left; font-size: 1.3em; height: 75px; margin: 0.55em 0 0 0;}
 
 	#haut ul {float: none; margin:0 auto; text-align: center;}
 
-	#haut li {margin:0 4% 0 4%;}
+	#haut li {margin:0 3% 0 3%;}
 
 	#contenu, body {width: 100%;}
 
