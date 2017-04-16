@@ -364,9 +364,9 @@ footer a:hover {color: #ff4848;}
 
 	#contenu_txt {font-size: 1em;}
 
-	.preview h2 {font-size: 130%;}
+	.preview h2 {font-size: 120%;}
 
-	.preview {width: 23.75%; margin-right: 1.25%;}
+	.preview {width: 23%; margin-right: 2%; padding: 1em;}
 
 	.img_vitrine {height: 210px; margin-right: 1.1em; margin-bottom: 1.1em;}
 
@@ -396,9 +396,11 @@ footer a:hover {color: #ff4848;}
 
 	#contenu_txt {font-size: 1em;}
 
-	.preview h2 {font-size: 130%;}
+	.preview h2 {font-size: 110%;}
 
-	.preview {width: 23.75%; margin-right: 1.25%;}
+	.date_article {font-size: 0.8em;}
+
+	.preview {width: 23%; margin-right: 2%; padding: 0.65em;}
 
 	.img_vitrine {height: 200px; margin-bottom: 1em; margin-right: 1em;}
 
@@ -419,6 +421,8 @@ footer a:hover {color: #ff4848;}
 	.img_vitrine {margin-bottom: 0.65em; margin-right: 0.65em; height: 177px;}
 
 	#haut {margin-top: -2em;}
+
+	.preview {width: 42%; margin-right: 4%; padding: 1em; margin-bottom: 1em;}
 
 }
 
@@ -454,7 +458,7 @@ footer a:hover {color: #ff4848;}
 
 	#contenu_img_txt {width: 100%; margin-top: 1.5em;}
 
-	.preview {width: 100%; margin-bottom: 1.4em; font-size: 105%; line-height: 150%;}
+	.preview {width: 100%; margin-bottom: 1.4em; font-size: 105%; line-height: 150%; padding: 1.5em;}
 
 	#folio {margin: 0 0 0.8em 0; font-size: 200%;}
 
