@@ -171,6 +171,9 @@ h2 {
 	color: #2d30bc;
 }
 
+.lien:hover {text-decoration: underline;}
+.lien {color: #ff4848;}
+
 /* ----------------- index ----------------- */
 
 .img_vitrine {
