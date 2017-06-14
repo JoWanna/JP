@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Azard</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="style.css">
+
+        <script>
+            
+            var numero;
+            var non = false;
+            var oui = true;
+            var age = 20;
+            var sante = 20;
+            var pouvoir = 0;
+            var effet;
+            var winORloose;
+            
+            var vieillesse = ["<img src='Ressources/Druide_1.png'>", "<img src='Ressources/Druide_2.png'>", "<img src='Ressources/Druide_3.png'>", "<img src='Ressources/Druide_4.png'>", "<img src='Ressources/Druide_5.png'>"];
+                
+            var futur = [
+                ["cette case du tableau ne sert à rien"],
+                
+                [non, "Lors de votre promenade quotidienne dans la forêt, vous remarquez une étrange fleur bleue. C'est étrange, elle n'était pourtant pas là hier ! Vous l'observez pendant quelques instants. Elle émane une faible lumière fluorescente, vous n'avez jamais vu ça de votre vie ! Vous souhaitez la cueillir afin de l'analyser dans votre atelier. Cueillerez-vous la fleur?",10,1,"Quelques secondes après l'avoir prise dans votre main, la fleur s'est fânée en dégagant un gaz rose. Cela était vraisemblablement toxique, mais heureuseement, vous êtes immunisé. Cependant, une crise d'éternuements survient et vous épuise pendant une heure. Vous perdez 1 point de santé.","Vous avez analysé la plante et avez fait une découverte fondamentale concernant sa fluorescence. Vous vous empressez de coucher sur papier cette trouvaille, avant d'expédier une copie au Grand Congrès des Druides. Votre pouvoir s'accroît de 10."],
+                
+                [non, "Un druide du Royaume voisin arrive en trombe dans votre atelier pour vous annoncer qu'il a trouvé un moyen de transformer les feuilles en vers de terre, ce qui pourrait peut-être vous aider dans votre quête. Tenterez-vous l'expérience ?",15,4,"A votre grand désarroi, l'expérience a réussi, mais ce ne sont pas les feuilles que vous avez transformées en vers, mais votre cher confrère. Le Roi vous protège du billot, mais il vous a tout de même condamné au fouet. Vous perdez 4 points de santé.","Après avoir ramassé des feuilles dans votre cour vous avez prononcé l'incantation nouvelle, et en effet, des vers de terre se sont mis à ramper partout sur la table. Vous remerciez chaleureusement le druide, car votre pouvoir s'est accru de 15."],
+                
+                [non, "Vous retrouvez un vieux grimoire parmis les archives du Royaume. Malheuseurement, l'ouvrage est presque impossible à lire, car les encres se sont effacées. Utiliserez-vous un sort pour rendre le grimoire lisible ?",5,1,"Maladroit comme vous êtes, vous avez transformé le grimoire en chat furieux. Il vous griffe à maintes reprises, vous enlevant 1 point de santé, avant de se calmer. Vous l'adoptez et vous le surnommez Grigri.","Votre sort a fonctionné. Vous découvrez enfin le secret du livre: comment préserver votre potager des insectes. Ca peut toujours être utile. Vous gagnez 5 points de pouvoir."],
+                
+                [non, "La Reine vous convoque en secret dans sa chambre. Elle vous expose un secret des plus honteux : elle a un petit bouton rouge dans son dos ! Elle vous supplie de le faire disparaître, car les conséquences pour l'avenir du Royaume pourraient être catastrophiques. Vous pourriez utiliser un sort classique, mais vous souhaitez tenter une nouvelle approche. Serez-vous audacieux ?",30,5,"Le bouton de la Reine s'est transformé en gargouille miniature et a commencé à griffer tout en crachant des flammes. Après opération d'urgence, Sa Majesté vous a condamné à 10 jours de prison ferme et vingt coups de fouet. Vous perdez 5 points de santé.","Votre approche avant-gardiste vous a attiré les grâces de toutes les Dames de la Cour: en effet, votre baume anti-imperfections à base de sang de chèvre a fait fureur suite à votre prouesse auprès de la Reine."],
+                
+                [non, "Un homme de la Garde Royale vient vous voir dans votre atelier. Sa femme et lui tentent désespérément d'avoir un enfant, et ce de puis plusieurs années. Vous vous souvenez d'une potion de fertilité, mais vous ne l'avez essayé qu'une fois auprès de Maître Malfurion, il y a quelques années. Tenterez-vous de concocter la potion ?",10,1,"Quelques jours plus tard, le garde revient, furieux. Ils vous hurle dessus, vous insulte et commence même à vous rosser violemment. Apparemment, la potion a donné tellement d'ardeur à sa femme qu'elle a failli tomber dans les bras du voisin. Vous perdez 1 point de santé.","Le liquide vert a fait son effet: quelques semaines plus tard, le garde revient vous voir, fort enthousiaste et fort heureux de votre compétence. Il vous offre un sac de graines en guise de récompense ainsi qu'un petit gâteau à la noix. Votre pouvoir s'est accru de 10."],
+                
+                [non, "Vous partez récolter des herbes médicinales, dans la Forêt d'Athis, lorsque vous rencontrez un jeune garçon étalé de tout son long dans la mousse. Vous observez les alentours. D'habitude, il n'y a personne dans ces bois, que ferait donc un enfant ici ? Irez-vous vers le garçon ?",10,2, "Votre candeur vous perdra, vous le savez. L'inconnu se relève précipitamment, dague à la main, et vous érafle l'épaule droite. Il tente ensuite de voler votre bourse, mais vous parvenez à le repousser. Il s'enfuit. Vous perdez 2 points de santé.","L'inconnu est blessé. Vous le portez à votre chaumine afin de le soigner au moyen d'onguent et de pansements. Une servante vient vous voir et, remarquant l'enfant, vous remercie en larme, car le petit Léon s'était enfui après une dispute de ses parents. Votre pouvoir s'accroît de 10."],
+                
+                [non, "Ce matin, vous vous réveillez avec grande peine. Rien de plus normal, vous avez fait un terrible cauchemar: il n'y avait plus de poudre de rose, et la poudre de rose, vous adorez ça, surtout dans votre thé, avec une cuillerée de miel et un peu de tabac. Paniqué, vous vérifiez vos réserves. Tout a disparu. Peut-être avez-vous déplacé le bocal sans vous en souvenir ? Trouverez-vous votre précieuse poudre ?",5,1, "Bouillant de rage, vous brisez une chaise en lui donnant un coup de pied, et par la même occasion, votre second orteil en partant de la gauche. Puis vous vous apercevez que le bocal de poudre de rose se trouve sur votre table de chevet. Vous perdez 1 point de santé.","Vous inspirez et vous expirez lentement à plusieurs reprises. Vous vous concentrez et vous entrez en transe. Vous avez une vision: la table de chevet. Vous ouvrez vos yeux avant de vous précipiter sur votre poudre de rose, par malchance, vous brisez le bocal et tout le contenu s'échappe. Au moins, vous gagnez 5 points de pouvoir."],
+                
+                [non, "Cette année, vous avez été élu meilleur druide de tout le continent. Votre Roi est fier et souhaite faire une démonstration de votre puissance durant un banquet organisé au Château Balabouze. Sa Majesté vous ordonne d'épater les nobles de la Cour en invoquant une créature. Vous n'avez jamais fait ça, mais vous vous gardez bien de le dire au Roi. Désespéré, vous épluchez tous vos grimoires, mais ne trouvez rien... Le jour du banquet, vous êtes au bord de l'évanouissement. Vous pouvez tenter quelque chose au hasard, ou courir pour votre vie. Réussirez-vous l'impossible ?",20,5, "Bouillant de rage, vous brisez une chaise en lui donnant un coup de pied, et par la même occasion, votre second orteil en partant de la gauche. Puis vous vous apercevez que le bocal de poudre de rose se trouve sur votre table de chevet. Vous perdez 1 point de santé.","Vous inspirez et vous expirez lentement à plusieurs reprises. Vous vous concentrez et vous entrez en transe. Vous avez une vision: la table de chevet. Vous ouvrez vos yeux avant de vous précipiter sur votre poudre de rose, par malchance, vous brisez le bocal et tout le contenu s'échappe. Au moins, vous gagnez 5 points de pouvoir."]
+                
+                ];
+            
+            
+            
+            function destin(){
+                
+                /* limites jauges */
+                if (sante>20) {
+                    sante= 20;
+                }
+                else if (pouvoir<0){
+                    pouvoir = 0;
+                }
+                else {   
+                }
+                
+                document.getElementById("temps").innerHTML = age;
+                document.getElementById("mana").innerHTML = pouvoir
+                document.getElementById("hp").innerHTML = sante;
+                
+                /* change physique âge */
+                if (age>=20 && age<=35) {
+                    document.getElementById("personnage").innerHTML = vieillesse[0];
+                } 
+                else if (age>=40 && age<=50){
+                    document.getElementById("personnage").innerHTML = vieillesse[1];
+                }
+                else if (age>=55 && age<=65){
+                    document.getElementById("personnage").innerHTML = vieillesse[2];
+                }
+                else if (age>=70 && age<=80){
+                    document.getElementById("personnage").innerHTML = vieillesse[3];
+                }
+                else {
+                    document.getElementById("personnage").innerHTML = vieillesse[4];
+                }
+                
+                /* test dead or not */
+                if (sante<=0){ /* mort */
+                    document.getElementById("vie").innerHTML = "Faible, peut-être même fou, ou déformé par votre incompétence, vous sentez votre corps vous lâcher. Vous gisez au sol, misérable, gémissant et tentez de vous souvenir d'un dernier sortilège qui pourrait vous tirer de là. Il y a effectivement une incantation interdite qui vous sauverait miraculeusement. Vous ouvrez la bouche, mais n'arrivez pas à prononcer le moindre mot. Vous décédez ainsi, dans une flaque de bave, seule réscapée de votre mutisme.<br><br>Rafraîchir la page pour rejouer.";
+                    document.getElementById("boutons").innerHTML = "";
+                }
+                else if (pouvoir>=100){ /* win*/
+                    document.getElementById("vie").innerHTML = "Finalement, après avoir affronté tous ces événements, après avoir survécu toutes ces années, vous êtes parvenu à atteindre le plus haut rang du Druide. Vous pouvez à présent tenter de créer la potion d'Immortalité, et ainsi devenir Dieu.<br><br>Rafraîchir la page pour rejouer."; 
+                    document.getElementById("boutons").innerHTML = "";
+                }
+                else if (age==100){
+                    document.getElementById("vie").innerHTML = "Vous venez de toucher la fin de votre vie. Allongé sur votre lit, vous fermez les yeux en pensant à votre quête inachevée... Un espoir cependant illumine votre esprit : peut-être que l'un de vos confrères arrivera là où vous avez échoué...<br><br>Rafraîchir la page pour rejouer.";
+                    document.getElementById("boutons").innerHTML = "";
+                } else {
+                    
+                    do {
+                        /* le chiffre 8 est à changer selon nb d'événements sauf*/
+                        numero = Math.floor((Math.random() * 8) + 1);
+                    } while (futur[numero][0]==oui);
+                    document.getElementById("vie").innerHTML = futur[numero][1];
+                    futur[numero][0] = oui;
+                }
+            }
+            
+            
+            
+
+            function consequence(){  
+                winORloose = Math.floor((Math.random() * 2) + 1);
+                if (winORloose==1){ /* win */
+                    effet = futur[numero][2]
+                    pouvoir = pouvoir + effet;
+                    document.getElementById("consequences").innerHTML = futur[numero][5] + "<br><br>";
+                }
+                else { /* loose */
+                    effet = futur[numero][3];
+                    sante = sante - effet;
+                    document.getElementById("consequences").innerHTML = futur[numero][4]+ "<br><br>";
+                }
+                /* âge+5 et lancer la suite du jeu */
+                age = age + 5;
+                destin();
+            }
+            
+
+            
+            
+            function direnon() {
+                pouvoir = pouvoir - 5;
+                document.getElementById("consequences").innerHTML = "Vous avez refusé d'agir." + "<br><br>"
+                /* âge+5 et lancer la suite du jeu */
+                age = age + 5;
+                destin();
+            }
+                
+        </script>
+        
+    </head>
+    
+    <body onload="destin()">
+        
+        <div id="haut">
+            
+            <div id="jauges">        
+                <p> <a id="backToMenu" href="menu.html">Retourner au Menu</a> </p>
+                <p>Âge <span id="temps"></span>Pouvoir <span id="mana"></span>Santé <span id="hp"></span> </p>  
+            </div> <!-- fin de jauges -->
+
+            <div id="personnage">
+            </div>
+            
+        </div> <!-- fin de haut -->
+        
+        <div id="texte">
+            
+            <div id="consequences">      
+            </div>
+            
+            <div id="vie">        
+            </div>
+            
+            <div id="boutons">
+                <button onclick="direnon()"> Non </button>
+                <button onclick="consequence()"> Oui </button>
+            </div> <!-- fin de boutons -->
+            
+        </div> <!-- fin de texte -->
+            
+    </body>
+</html>
